@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>Centering a form</title>
+</head>
+<link rel="stylesheet" href="../styleclick.css"/>
+<script src="../Modal.js"></script>
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<body style="background-color:white">
+
+./ Modal erstellen
+<div class="modal-content">
+    <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2 style="font-size: 250%;"> You just won a brand new IPhone 20X</h2>
+    </div>
+    <div class="modal-body">
+        <p>Click on the Button get your IPhone 20X for Free!</p>
+        <p>Already over 1Million + people have claimed their IPhone 20X</p>
+    </div>
+    <div class="modal-footer">
+        <h3>You just won a brand new IPhone 20X!</h3>
+    </div>
+</div>
+./ Modal Element anpassen
+<div id="id01" class="modal">
+    ./Span auf klick (popup)
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+            <h1 style="font-size: 400%; align-content: center">Your Chance of Winning a Prize!</h1>
+            <p style="font-size: 400%; align-content: center">Don't Leave yet! There are even more Prizes for you to get
+                for Free!</p>
+
+            <div class="clearfix">
+                <button style="text-align: center; font-size: 280%" type="button" class="cancelbtn">Get your IPhone for
+                    free!
+                </button>
+                <button style="text-align: center; font-size: 280%" type="button" class="deletebtn">New Playstation 6
+                    for free!
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Get a Free Samsung Galaxy 10S</p>
+    </div>
+</div>
+<h1 style="text-align: center; font-size: 600%;">$$$ You've just won 100 Billion USD $$$</h1>
+<p style="text-align: center; font-size: 350%; color: red">This is not a Joke Click the Button below to claim your
+    Prize!</p>
+<img style="float: left" src="https://media.giphy.com/media/6n7vaZemeCfII/giphy.gif">
+<img style="float: right" src="//thumbs.gfycat.com/EverlastingVioletCaracal-size_restricted.gif">
+<hr>
+<center>
+    <img style="height: 400px; width: 400px"
+         src="https://i.pinimg.com/originals/29/2f/47/292f477a133c43497fdc1e1a4bb56cf5.png">
+    <div class="container">
+        <img src="https://i.gifer.com/TC4z.gif" alt="Snow" style="width:100%">
+        <a href="COKE.html">
+            <button class="btn">Click Here!</button>
+        </a>
+    </div>
+    <img style="height: 400px; width: 400px"
+         src="https://i.pinimg.com/originals/6c/ce/aa/6cceaa570a325131aee10e54b96ab8eb.png" width="500" height="600">
+</center>
+<div class="container2"> <a href="Impressum.html"> <button class="btn2">Click here for Impressium</button> </a> </div>
+<button onmouseover="document.getElementById('id01').style.display='block'">Click here for more Prizes!</button>
+</body>
+</html>
+
+
+
+

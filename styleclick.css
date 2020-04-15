@@ -1,0 +1,210 @@
+body{
+    background-image: url("3-37863_cash-png-hd-money-falling-transparent-background-png.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 50%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+    background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+    padding: 16px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+        width: 100%;
+    }
+}
